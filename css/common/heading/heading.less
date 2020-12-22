@@ -1,13 +1,21 @@
 .heading {
-    font-size: 26px;
-    font-family: @font-family-heading;
-    margin: 0 0 20px;
+  font-size: 26px;
+  font-family: @font-family-heading;
+  margin: 0 0 10px;
 
-    &_level-2 {
-        font-size: 20px;
-
-        @media @screen-gt-s {
-            font-size: 30px;
-        }
+  &_level-1 {
+    font-weight: normal;
+    @media @screen-gt-s {
+      font-size: 36px;
     }
+  }
+
+  &_level-2 {
+    margin: 0 0 20px;
+    font-size: 20px;
+
+    @media @screen-gt-s {
+      font-size: 30px;
+    }
+  }
 }

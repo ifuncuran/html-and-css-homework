@@ -1,0 +1,41 @@
+.slider-bar {
+  display: flex;
+  justify-content: center;
+
+  @media @screen-only-s {
+    width: @column-width-s * 2;
+  }
+
+  @media @screen-gt-s {
+    position: absolute;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 15px;
+    @media @screen-gt-s {
+      top: 282px;
+    }
+
+    @media @screen-gt-m {
+      top: 422px;
+    }
+  }
+
+  &__dot {
+    width: 8px;
+    height: $width;
+    border-radius: 50%;
+    margin: 0 2px;
+  }
+
+  &__dot_active {
+    background-color: #212122;
+  }
+
+  &__dot_inactive {
+    background-color: #dfdedd;
+  }
+}

@@ -1,0 +1,21 @@
+.section-features {
+  background-color: #eeeeee;
+  padding: 15px 0;
+  @media @screen-gt-m {
+    padding: 25px 0;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@feature-icons: support, delivery, return;
+
+each(@feature-icons, {
+    .feature-item__logo_@{value} {
+        background-image: url('@{value}.svg');
+    }
+})
