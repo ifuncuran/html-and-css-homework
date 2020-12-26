@@ -1,46 +1,51 @@
 .footer {
   padding: 15px 0;
-  background-color: #212122;
+  background-color: @color-dark;
 
   &__links {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     margin-bottom: 15px;
     //лечим пробелы между блоками в inline-block:
     font-size: 0;
-    @media @screen-gt-s {
-      width: 100%;
-      height: 70px;
-    }
   }
 
   &__social {
-    width: 100%;
-    margin: 15px 0 30px;
-    @media @screen-gt-s {
-      width: 210px;
+    margin: 15px 0;
+    @media @screen-gt-m {
+      margin: 20px 0;
     }
   }
 
   &__apps {
-    @media @screen-only-s {
-      width: 100%;
-    }
-    margin: 0 0 15px;
+    margin: 15px 0;
+    display: flex;
     @media @screen-gt-s {
-      width: 300px;
+      justify-content: flex-end;
+    }
+    @media @screen-gt-m {
+      margin: 20px 0;
     }
   }
 
-  &__fill {
-    flex-grow: 1;
+  &__logo {
+    display: none;
+    @media @screen-gt-m {
+      display: flex;
+      justify-content: flex-end;
+      margin: 15px 0;
+    }
   }
 
   &__copyright {
     border-top: 1px solid #666666;
-    padding: 15px 0 8px;
+    padding: 15px 0 10px;
+
+    @media @screen-gt-s {
+      padding: 30px 0 15px;
+    }
+    @media @screen-gt-m {
+      padding: 30px 0 20px;
+    }
     color: #999999;
-    line-height: 20px;
+    line-height: 1.4;
   }
 }
