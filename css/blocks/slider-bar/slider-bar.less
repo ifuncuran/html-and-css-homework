@@ -16,11 +16,11 @@
     justify-content: center;
     bottom: 15px;
     @media @screen-gt-s {
-      top: 282px;
+      top: 285px;
     }
 
     @media @screen-gt-m {
-      top: 422px;
+      top: 420px;
     }
   }
 
@@ -29,13 +29,13 @@
     height: $width;
     border-radius: 50%;
     margin: 0 2px;
+    padding: 0;
+    border: 0;
+    background-color: #dfdedd;
+    cursor: pointer;
   }
 
   &__dot_active {
-    background-color: #212122;
-  }
-
-  &__dot_inactive {
-    background-color: #dfdedd;
+    background-color: @color-dark;
   }
 }

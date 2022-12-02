@@ -67,16 +67,16 @@
           <div class="slider-bar">
             <div class="column column_s-2 column_m-6 column_l-12">
               <div class="slider-bar__container">
-                <div class="slider-bar__dot slider-bar__dot_active"></div>
-                <div class="slider-bar__dot slider-bar__dot_inactive"></div>
-                <div class="slider-bar__dot slider-bar__dot_inactive"></div>
-                <div class="slider-bar__dot slider-bar__dot_inactive"></div>
+                <button class="slider-bar__dot slider-bar__dot_active"></button>
+                <button class="slider-bar__dot"></button>
+                <button class="slider-bar__dot"></button>
+                <button class="slider-bar__dot"></button>
               </div>
             </div>
           </div>
           <div class="section-slider__description">
             <div class="column column_s-2 column_m-3 column_l-6">
-              <div class="section-slider__description_container">
+              <div class="section-slider__description-container">
                 <div class="section-slider__header">
                   <h1 class="heading heading_level-1">
                     Мужская и&nbsp;женская одежда с&nbsp;символикой HeadHunter
@@ -184,63 +184,77 @@
     </section>
     <section class="section-features">
       <div class="column-wrapper">
-        <ul class="section-features__list">
+        <div class="section-features__list">
           <div class="column-row">
             <div class="column column_s-2 column_m-2 column_l-4">
-              <li class="feature-item">
-                <div
-                  class="feature-item__logo feature-item__logo_delivery"
-                ></div>
-                <div class="feature-item__text">
-                  Быстрая доставка по&nbsp;всей России
-                </div>
-              </li>
+                <div class="feature-item">
+                  <div
+                    class="feature-item__logo feature-item__logo_delivery"
+                  ></div>
+                  <div class="feature-item__text">
+                    Быстрая доставка по&nbsp;всей России
+                  </div>
+                </div>  
             </div>
             <div class="column column_s-2 column_m-2 column_l-4">
-              <li class="feature-item">
-                <div class="feature-item__logo feature-item__logo_return"></div>
-                <div class="feature-item__text">
-                  100% гарантия возврата и&nbsp;подлинность товара
-                </div>
-              </li>
+                <div class="feature-item">
+                  <div class="feature-item__logo feature-item__logo_return"></div>
+                  <div class="feature-item__text">
+                    100% гарантия возврата и&nbsp;подлинность товара
+                  </div>
+                </div> 
             </div>
-            <div class="column column_s-2 column_m-2 column_l-4">
-              <li class="feature-item">
-                <div
-                  class="feature-item__logo feature-item__logo_support"
-                ></div>
-                <div class="feature-item__text">
-                  Круглосуточная служба поддержки
-                </div>
-              </li>
-            </div>
+            <div class="column column_s-2 column_m-2 column_l-4"> 
+              <div class="feature-item">
+                  <div
+                    class="feature-item__logo feature-item__logo_support"
+                  ></div>
+                  <div class="feature-item__text">
+                    Круглосуточная служба поддержки
+                  </div>
+              </div>
+            </div>  
           </div>
-        </ul>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="column-wrapper">
         <div class="footer__links">
-          <div class="footer__social">
-            <a class="social-button social-button_facebook" href="#">Фейсбук</a>
-            <a class="social-button social-button_twitter" href="#">Твиттер</a>
-            <a class="social-button social-button_vk" href="#">Вконтакте</a>
-            <a class="social-button social-button_instagram" href="#">Инстаграм</a>
-          </div>
-          <div class="footer__fill"></div>
-          <div class="footer__apps">
-            <a class="getapp-button getapp-button_appStore" href="#">Загрузите в App Store</a>
-            <a class="getapp-button getapp-button_googlePlay" href="#">Доступно в Google Play</a>
+          <div class="column-row">
+            <div class="column column_s-2 column_m-3 column_l-4">
+              <div class="footer__social">
+                <a class="social-button social-button_facebook" href="#">Фейсбук</a>
+                <a class="social-button social-button_twitter" href="#">Твиттер</a>
+                <a class="social-button social-button_vk" href="#">Вконтакте</a>
+                <a class="social-button social-button_instagram" href="#">Инстаграм</a>
+              </div>
+            </div>
+            <div class="column column_s-2 column_m-3 column_l-4">
+              <div class="footer__apps">
+                <a class="getapp-button getapp-button_app-store" href="#">Загрузите в App Store</a>
+                <a class="getapp-button getapp-button_google-play" href="#">Доступно в Google Play</a>
+              </div>
+            </div>
+
+            <div class="column column_l-4">
+              <div class="footer__logo">
+                <a href="/">
+                  <img class="logo" src="css/blocks/logo/hh-gray-logo.svg" alt="hh.ru" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="footer__copyright">
-          <div class="footer_copyright_text-container">
-            © 2019 Группа компаний HeadHunter<br/>
-            Сегодня на сайте 684&nbsp;978 вакансий, 
-            34&nbsp;789&nbsp;747 резюме, 858&nbsp;923 компании 
-            и&nbsp;за&nbsp;неделю 1&nbsp;211&nbsp;363&nbsp;приглашения
-          </div>
+            <div class="footer__copyright">
+              <div class="footer_copyright_text-container">
+                © 2019 Группа компаний HeadHunter<br/>
+                Сегодня на сайте 684&nbsp;978 вакансий, 
+                34&nbsp;789&nbsp;747 резюме, 858&nbsp;923 компании 
+                и&nbsp;за&nbsp;неделю 1&nbsp;211&nbsp;363&nbsp;приглашения
+              </div>
+            </div>
         </div>
       </div>
     </footer>
